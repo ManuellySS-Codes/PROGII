@@ -1,0 +1,33 @@
+==225284== Memcheck, a memory error detector
+==225284== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==225284== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==225284== Command: Resultados/Manuelly/utils_char2/prog Resultados/Manuelly/utils_char2/Casos/5
+==225284== Parent PID: 225283
+==225284== 
+==225284== Invalid write of size 1
+==225284==    at 0x10936B: LeVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284==    by 0x1091C7: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284==  Address 0x4a775de is 0 bytes after a block of size 110 alloc'd
+==225284==    at 0x484DB80: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==225284==    by 0x109273: AumentaTamanhoVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284==    by 0x10931A: LeVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284==    by 0x1091C7: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284== 
+==225284== Invalid read of size 1
+==225284==    at 0x1093CC: ImprimeString (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284==    by 0x1091D7: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284==  Address 0x4a775de is 0 bytes after a block of size 110 alloc'd
+==225284==    at 0x484DB80: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==225284==    by 0x109273: AumentaTamanhoVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284==    by 0x10931A: LeVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284==    by 0x1091C7: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/utils_char2/prog)
+==225284== 
+==225284== 
+==225284== HEAP SUMMARY:
+==225284==     in use at exit: 0 bytes in 0 blocks
+==225284==   total heap usage: 13 allocs, 13 frees, 8,853 bytes allocated
+==225284== 
+==225284== All heap blocks were freed -- no leaks are possible
+==225284== 
+==225284== For lists of detected and suppressed errors, rerun with: -s
+==225284== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
