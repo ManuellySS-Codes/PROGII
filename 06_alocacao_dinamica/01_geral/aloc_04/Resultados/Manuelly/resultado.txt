@@ -7,11 +7,11 @@ Teste main
 Nota de Manuelly para o teste main: 3.34
 Teste completo
   - Resultados corretos: 6 de 6
-  - Valgrinds corretos: 1 de 6
-Nota de Manuelly para o teste completo: 1.93
+  - Valgrinds corretos: 6 de 6
+Nota de Manuelly para o teste completo: 3.33
 Teste utils_char2
   - Resultados corretos: 6 de 6
-  - Valgrinds corretos: 1 de 6
-Nota de Manuelly para o teste utils_char2: 1.93
-Nota de Manuelly: 0+(1.93)+(3.34)+(1.93)
-Nota de Manuelly: 7.20
+  - Valgrinds corretos: 6 de 6
+Nota de Manuelly para o teste utils_char2: 3.33
+Nota de Manuelly: 0+(3.33)+(3.34)+(3.33)
+Nota de Manuelly: 10.00

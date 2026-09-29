@@ -1,33 +1,15 @@
-==224055== Memcheck, a memory error detector
-==224055== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==224055== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==224055== Command: Resultados/Manuelly/completo/prog Resultados/Manuelly/completo/Casos/4
-==224055== Parent PID: 224054
-==224055== 
-==224055== Invalid write of size 1
-==224055==    at 0x1093CF: LeVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055==    by 0x10922B: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055==  Address 0x4a77916 is 0 bytes after a block of size 150 alloc'd
-==224055==    at 0x484DB80: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==224055==    by 0x1092D7: AumentaTamanhoVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055==    by 0x10937E: LeVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055==    by 0x10922B: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055== 
-==224055== Invalid read of size 1
-==224055==    at 0x109430: ImprimeString (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055==    by 0x10923B: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055==  Address 0x4a77916 is 0 bytes after a block of size 150 alloc'd
-==224055==    at 0x484DB80: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==224055==    by 0x1092D7: AumentaTamanhoVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055==    by 0x10937E: LeVetor (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055==    by 0x10922B: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Manuelly/completo/prog)
-==224055== 
-==224055== 
-==224055== HEAP SUMMARY:
-==224055==     in use at exit: 0 bytes in 0 blocks
-==224055==   total heap usage: 17 allocs, 17 frees, 9,393 bytes allocated
-==224055== 
-==224055== All heap blocks were freed -- no leaks are possible
-==224055== 
-==224055== For lists of detected and suppressed errors, rerun with: -s
-==224055== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==20439== Memcheck, a memory error detector
+==20439== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==20439== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==20439== Command: Resultados/Manuelly/completo/prog Resultados/Manuelly/completo/Casos/4
+==20439== Parent PID: 20438
+==20439== 
+==20439== 
+==20439== HEAP SUMMARY:
+==20439==     in use at exit: 0 bytes in 0 blocks
+==20439==   total heap usage: 17 allocs, 17 frees, 9,407 bytes allocated
+==20439== 
+==20439== All heap blocks were freed -- no leaks are possible
+==20439== 
+==20439== For lists of detected and suppressed errors, rerun with: -s
+==20439== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
