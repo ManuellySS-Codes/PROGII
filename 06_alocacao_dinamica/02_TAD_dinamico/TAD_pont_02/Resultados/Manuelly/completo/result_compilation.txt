@@ -1,0 +1,10 @@
+eleicao.c: In function ‘ImprimeResultadoEleicao’:
+eleicao.c:158:35: warning: self-comparison always evaluates to false [-Wtautological-compare]
+  158 |     if(empate_pres ==0 && maior_p > maior_p>= eleicao->votosBrancosPresidente && maior_p>= eleicao->votosNulosPresidente){
+      |                                   ^
+eleicao.c:158:35: warning: comparisons like ‘X<=Y<=Z’ do not have their mathematical meaning [-Wparentheses]
+  158 |     if(empate_pres ==0 && maior_p > maior_p>= eleicao->votosBrancosPresidente && maior_p>= eleicao->votosNulosPresidente){
+      |                           ~~~~~~~~^~~~~~~~~
+eleicao.c:122:127: warning: unused variable ‘total_invalidos’ [-Wunused-variable]
+  122 |     int j=0, indice_gov_mais_votado=0, indice_pres_mais_votado=0, maior_p= -1000,maior_g= -1000, empate_gov=0, empate_pres=0, total_invalidos=0;
+      |                                                                                                                               ^~~~~~~~~~~~~~~

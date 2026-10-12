@@ -1,0 +1,48 @@
+==36404== Memcheck, a memory error detector
+==36404== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==36404== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==36404== Command: Resultados/Manuelly/completo/prog Resultados/Manuelly/completo/Casos/1
+==36404== Parent PID: 36403
+==36404== 
+==36404== Use of uninitialised value of size 8
+==36404==    at 0x48D0F4A: __vfscanf_internal (vfscanf-internal.c:1975)
+==36404==    by 0x48C0EC5: __isoc99_scanf (isoc99_scanf.c:30)
+==36404==    by 0x109393: LeMatriz (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_02/Resultados/Manuelly/completo/prog)
+==36404==    by 0x109269: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_02/Resultados/Manuelly/completo/prog)
+==36404== 
+==36404== Invalid write of size 4
+==36404==    at 0x48D0F4A: __vfscanf_internal (vfscanf-internal.c:1975)
+==36404==    by 0x48C0EC5: __isoc99_scanf (isoc99_scanf.c:30)
+==36404==    by 0x109393: LeMatriz (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_02/Resultados/Manuelly/completo/prog)
+==36404==    by 0x109269: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_02/Resultados/Manuelly/completo/prog)
+==36404==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==36404== 
+==36404== 
+==36404== Process terminating with default action of signal 11 (SIGSEGV): dumping core
+==36404==  Access not within mapped region at address 0x0
+==36404==    at 0x48D0F4A: __vfscanf_internal (vfscanf-internal.c:1975)
+==36404==    by 0x48C0EC5: __isoc99_scanf (isoc99_scanf.c:30)
+==36404==    by 0x109393: LeMatriz (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_02/Resultados/Manuelly/completo/prog)
+==36404==    by 0x109269: main (in /workspaces/PROGII/06_alocacao_dinamica/01_geral/aloc_02/Resultados/Manuelly/completo/prog)
+==36404==  If you believe this happened as a result of a stack
+==36404==  overflow in your program's main thread (unlikely but
+==36404==  possible), you can try to increase the size of the
+==36404==  main thread stack using the --main-stacksize= flag.
+==36404==  The main thread stack size used in this run was 8388608.
+==36404== 
+==36404== HEAP SUMMARY:
+==36404==     in use at exit: 4,196 bytes in 2 blocks
+==36404==   total heap usage: 2 allocs, 0 frees, 4,196 bytes allocated
+==36404== 
+==36404== LEAK SUMMARY:
+==36404==    definitely lost: 0 bytes in 0 blocks
+==36404==    indirectly lost: 0 bytes in 0 blocks
+==36404==      possibly lost: 0 bytes in 0 blocks
+==36404==    still reachable: 4,196 bytes in 2 blocks
+==36404==         suppressed: 0 bytes in 0 blocks
+==36404== Reachable blocks (those to which a pointer was found) are not shown.
+==36404== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==36404== 
+==36404== Use --track-origins=yes to see where uninitialised values come from
+==36404== For lists of detected and suppressed errors, rerun with: -s
+==36404== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
